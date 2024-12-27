@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+    html{
+      scroll-behavior: smooth;
+    }
+      .myBody {
+        margin: 8px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+      .bgimg {
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .schtift {
+        font-family: "Pacifico", cursive;
+        margin-bottom: 0px;
+        margin-left: 10px;
+      }
+      .main-container {
+        position: relative;
+        background-color: rgba(200, 255, 255, 0.2);
+        left: 0;
+        right: 0;
+        /* height: 300px; */
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #ff6565;
+        filter: drop-shadow(5px 15px 3px black);
+      }
+      .menu{
+        position: absolute;
+        top : 16px;
+        filter: drop-shadow(5px 15px 2px black);
+        right: 100px;
+      }
+      .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 30px;
+      }
+      .menu a:hover {
+        color: red;
+        background-color: rgba(200, 255, 255, 0.4);
+        border-radius: 8px;
+        padding: 5px;
+      }
+      #order_btn{
+        background-color: rgba(200, 255, 255, 0.4);
+        padding: 5px;
+      }
+      .dCust {
+        margin-left: 10px;
+        line-height: 2;
+      }
+      .footer_Cu {
+        background-color: rgba(35, 38, 41);
+        border-radius: 8px;
+        color: white;
+        padding: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+      }
+      .link_Cu {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .link_Cu:hover {
+        text-decoration: none;
+        color: #ff0000;
+        padding: 5px;
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+  <body class="myBody">
+    <img class="bgimg" src="./img/Resturant.jpg" alt="" />
+
+    <div class="main-container">
+      <h1>Herzlich willkommen</h1>
+      Hier findest du einen Überblick über unsere Speisen.
+    </div>
+    <div class="menu" id="teptop">
+      <a id="order_btn" href="">BESTELL ONLINE</a>
+      <a href="#contact">RESERVIEREN</a>
+      <a href="#contact">KONTAKT</a>
+      <a href="#address">ANFAHRT</a>
+      <href></href>
+    </div>
+    <br />
+    <!-- Tageskarte -->
+    <div class="dCust">
+      <h2 class="schtift">Tageskarte</h2>
+      <table>
+        <tr>
+          <td>Montag :</td>
+          <td>Pizza</td>
+          <td>8,99 €</td>
+        </tr>
+        <tr>
+          <td>Dienstag :</td>
+          <td>Noodel</td>
+          <td>6,99 €</td>
+        </tr>
+        <tr>
+          <td>Mittwoch :</td>
+          <td>Gebratenes Seelachsfilet</td>
+          <td>12,99 €</td>
+        </tr>
+        <tr>
+          <td>Donnerstag :</td>
+          <td>Würzige Beef Ribs</td>
+          <td>112,90 €</td>
+        </tr>
+        <tr>
+          <td>Freitag :</td>
+          <td>Cabernet Sauvignon</td>
+          <td>19,99 €</td>
+        </tr>
+        <tr>
+          <td>Samstag :</td>
+          <td>Block Burger</td>
+          <td>13,90 €</td>
+        </tr>
+        <tr>
+          <td>Sonntag :</td>
+          <td>Huftmedaillons</td>
+          <td>22,90 €</td>
+        </tr>
+      </table>
+    </div>
+    <p class="dCust" >
+      Zur Speisekarte
+      <a href="./downlods/List.pdf" class="link_Cu" target="_blank">
+        Herrunterladen
+      </a>
+    </p>
+
+    <br />
+    <!-- Öffnungszeit -->
+    <div class="dCust">
+      <h2 class="schtift">Unser Öffnungszeit</h2>
+      <table>
+        <tr>
+          <td>Mo - Fr :</td>
+          <td>12:00 - 24:00 Uhr</td>
+        </tr>
+        <tr>
+          <td>Sa - So :</td>
+          <td>12:00 - 3:00 Uhr</td>
+        </tr>
+      </table>
+    </div>
+    
+    <br />
+    <!-- Kontakt -->
+    <div class="dCust" id="contact">
+      <h2 class="schtift">Kontakt</h2>
+      Für RESERVIEREN oder BESTELLEN Sie können uns unter kontaktieren : <br />
+      <div>
+        Telefon &#9742; :
+        <a href="tel:+0123456789" class="link_Cu">0123456789</a>
+        <br />
+        <E-Mail
+          >E-Mail :<a href="mailto:wassimmadwwar@gmail.com" class="link_Cu">
+            Senden @
+          </a>
+        </E-Mail>
+      </div>
+    </div>
+    <br />
+<!-- Anfahrt -->
+    <div class="dCust" id="address">
+      <h2 class="schtift">Anfahrt</h2>
+      Unser Adresse laut : Fasanenstieg 11, 22889 Tangstedt
+      <!-- Ein Adresse von google zu mitteilen auf google maps auf adresse teilen -> karten einbetten -> HTML kopieren -->
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18883.20577724979!2d10.032083988189694!3d53.72893743468235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b226681c90abe7%3A0xbe0419fb1113c04c!2sFasanenstieg%2011%2C%2022889%20Tangstedt!5e0!3m2!1sde!2sde!4v1735165198636!5m2!1sde!2sde"
+          width="100%"
+          height="450"
+          style="border: 10px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_Cu">
+        <div>&copy; copyright 2025 Wassim GmbH</div>
+        <div>
+          <a href="impressum.html" class="link_Cu" target="_blank">Impressum</a>
+          |
+          <a href="datenschutz.html" class="link_Cu" target="_blank"
+            >Datenschutz</a
+          >
+        </div>
+        <div>
+          <a class="link_Cu" href="#teptop" >Nach oben</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
